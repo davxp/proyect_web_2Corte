@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fila Virtual - Universidad de Barranquilla</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+</head>
+
+<body style="font-family: Arial, sans-serif;">
+   
+    <header class="bg-primary text-white text-center py-4">
+       <div class="row">
+                <div class=" col-md-8">
+                    <h1>Fila Virtual - Universidad de Barranquilla</h1>
+                </div>
+                <div class="col-md-4 py-2">
+                    <button class="btn btn-light" onclick="Redireccionar()">Iniciar Sesión</button>
+                </div>
+      </div>
+    </header>
+    
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-5 border-3 border-primary border-opacity-75 rounded-4">
+                    <div class="card-body">
+                        <h2 class="card-title border-bottom border-4 border-warning-subtle">¿Qué es la Fila Virtual?</h2>
+                        <p class="card-text">La <strong>Fila Virtual</strong> de la Universidad de Barranquilla es una plataforma diseñada para agilizar la atención de problemas administrativos. Con esta herramienta, los estudiantes, docentes y personal administrativo pueden tomar un turno virtual y ser notificados cuando sea su momento de ser atendidos, evitando largas esperas físicas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-5 border-3 border-primary border-opacity-75 rounded-4" ">
+                    <div class="card-body">
+                        <h2 class="card-title border-bottom border-4 border-warning-subtle">Cómo Funciona</h2>
+                        <p class="card-text">El proceso es sencillo:</p>
+                        <ol>
+                            <li><strong>Regístrate o inicia sesión</strong> en la plataforma.</li>
+                            <li><strong>Selecciona el servicio</strong> que necesitas (por ejemplo, trámites académicos, financieros, etc.).</li>
+                            <li><strong>Toma un turno virtual</strong> y espera tu turno desde la comodidad de tu hogar o cualquier lugar.</li>
+                            <li>Recibirás una <strong>notificación</strong> por correo electrónico o en la plataforma cuando sea tu turno.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-md-6">
+                <div class="card mb-5 border-3 border-success border-opacity-75 rounded-4" ">
+                    <div class="card-body">
+                        <h2 class="card-title border-bottom border-4 border-success-subtle">Beneficios</h2>
+                        <p class="card-text">La Fila Virtual ofrece múltiples ventajas:</p>
+                        <ul>
+                            <li>Ahorra tiempo al evitar filas físicas.</li>
+                            <li>Notificaciones en tiempo real cuando sea tu turno.</li>
+                            <li>Acceso desde cualquier dispositivo (computadora, tablet o móvil).</li>
+                            <li>Optimización del tiempo para estudiantes y personal administrativo.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-5 border-3 border-primary border-opacity-75 rounded-4" ">
+                    <div class="card-body">
+                        <h2 class="card-title border-bottom border-4 border-warning-subtle">Características</h2>
+                        <ul>
+                            <li>Solicitud de turnos en línea.</li>
+                            <li>Notificaciones por correo electrónico o en la plataforma.</li>
+                            <li>Gestión eficiente de filas virtuales.</li>
+                            <li>Interfaz intuitiva y fácil de usar.</li>
+                            <li>Disponible 24/7 para la solicitud de turnos.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card mb-5 border-3 border-primary border-opacity-75 rounded-4" >
+                    <div class="card-body">
+                        <h2 class="card-title border-bottom border-4 border-warning-subtle">Testimonios</h2>
+                        <blockquote style="border-left: 5px solid #007bff; padding-left: 10px; margin: 20px 0;">
+                            <p>"La Fila Virtual ha sido una solución increíble. Ya no tengo que pasar horas esperando en la universidad para resolver mis trámites."</p>
+                            <footer>- María González, Estudiante</footer>
+                        </blockquote>
+                        <blockquote style="border-left: 5px solid #007bff; padding-left: 10px; margin: 20px 0;">
+                            <p>"Gracias a esta plataforma, hemos podido agilizar la atención y reducir las aglomeraciones en las oficinas administrativas."</p>
+                            <footer>- Carlos Rodríguez, Personal Administrativo</footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card border-3 border-primary border-opacity-75 rounded-4">
+                    <div class="card-body ">
+                        <h2 class="card-title border-bottom border-3 border-warning-subtle ">Preguntas Frecuentes</h2>
+                        <!-- Acordeón -->
+                        <div class="accordion pt-3" id="faqAccordion">
+                            <!-- Pregunta 1 -->
+                            <div class="card border-warning-subtle">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <button class="btn text-dark" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <strong>¿Cómo me registro en la Fila Virtual?</strong>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                                    <div class="card-body">
+                                        Para registrarte, haz clic en el botón de "Iniciar Sesión" y sigue las instrucciones para crear tu cuenta.
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <!-- Pregunta 2 -->
+                            <div class="card border-warning-subtle">
+                                <div class="card-header" id="headingTwo">
+                                    <h5 class="mb-0">
+                                        <button class="btn text-dark collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            <strong>¿Es necesario estar físicamente en la universidad para tomar un turno?</strong>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                                    <div class="card-body">
+                                        No, puedes tomar un turno desde cualquier lugar y ser notificado cuando sea tu momento de ser atendido.
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <!-- Pregunta 3 -->
+                            <div class="card border-warning-subtle">
+                                <div class="card-header" id="headingThree">
+                                    <h5 class="mb-0">
+                                        <button class="btn text-dark collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            <strong>¿Cómo recibo las notificaciones?</strong>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                                    <div class="card-body">
+                                        Recibirás notificaciones por correo electrónico o directamente en la plataforma, dependiendo de tus preferencias.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-primary text-white text-center py-4 "">
+        <p>© 2025 Universidad de Barranquilla. Todos los derechos reservados.</p>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+
+</html>
